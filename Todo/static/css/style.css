@@ -1,0 +1,19 @@
+
+.main-div{
+    display: flex;
+    justify-content: center;
+}
+#message{
+    background-color: cornflowerblue;
+    width: fit-content;
+    color: wheat;
+    padding: 0.5em;
+    border-radius: 4px;
+}
+
+nav{
+    background-color: #DFEFF4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23DFEFF4' cx='50' cy='0' r='50'/%3E%3Cg fill='%23d2e8ef' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c5e0ea' cx='50' cy='100' r='50'/%3E%3Cg fill='%23b9d7e5' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23accee0' cx='50' cy='200' r='50'/%3E%3Cg fill='%23a0c5da' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%2394bcd4' cx='50' cy='300' r='50'/%3E%3Cg fill='%2388b2ce' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%237da8c8' cx='50' cy='400' r='50'/%3E%3Cg fill='%23719dc2' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%236693bb' cx='50' cy='500' r='50'/%3E%3Cg fill='%235b88b5' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23507dae' cx='50' cy='600' r='50'/%3E%3Cg fill='%234c72a0' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23476893' cx='50' cy='700' r='50'/%3E%3Cg fill='%23435e86' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%233e5479' cx='50' cy='800' r='50'/%3E%3Cg fill='%23394b6d' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23334260' cx='50' cy='900' r='50'/%3E%3Cg fill='%232e3954' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23283148' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: contain;
+}

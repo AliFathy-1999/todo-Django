@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{%block content%}
+<main class="container w-100 main card p-5">
+    <form method="POST">
+        {% csrf_token %}
+      <div class="d-flex justify-content-center">
+        <h1>Todo</h1>
+        <img class="mb-4" src="../static/images/todoimage.png" alt="" width="72" height="57">
+      </div>
+        <h1 class="h3 mb-3 fw-normal text-center mb-4">Please sign in</h1>
+      {% if errorMsg %}
+      <h3 class="text-bg-danger p-3 text-center rounded-2">{{errorMsg}}</h3>
+      {% endif %}
+      <div class="form-floating mb-4">
+        <input type="username" class="form-control" id="floatingInput" name="username">
+        <label for="floatingInput">Enter your username</label>
+      </div>
+      <div class="form-floating mb-5">
+        <input type="password" class="form-control" name="password" id="floatingInput">
+        <label for="floatingInput">Enter your password </label>
+      </div>
+      <input class="w-100 btn btn-lg btn-primary" type="submit" value="Sign in">
+      <p class="text-center mt-4 text-primary">Don't have an account? <a href="{% url 'signup' %}" class="btn btn-warning"><i class="bi bi-box-arrow-in-right"></i> Register</a></p>
+    </form>
+  </main>
+{%endblock content%}

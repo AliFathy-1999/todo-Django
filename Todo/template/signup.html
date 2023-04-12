@@ -1,0 +1,29 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+    
+    <h1 class="mt-5 text-warning" style="margin-left:830px;">Todo List</h1>
+
+    <div class="container mt-5 bg-light pt-5 pb-5" style="padding-left: 420px;">
+    
+        <div class="row">
+    
+            <div class="col-md-6">
+    
+                <form method="POST">
+            
+                    {% csrf_token %}
+                    
+                    {% load bootstrap %}
+                    {{ form|bootstrap }}       
+                    <button class="btn btn-primary rounded mt-4" type="submit">Sign-Up</button>
+            
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+{% endblock %}

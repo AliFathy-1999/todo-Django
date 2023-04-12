@@ -1,0 +1,32 @@
+{% extends 'base.html'%}
+
+
+{% block content %}
+<div class="main-div">
+    <h1 id="message"> {{ message }}  </h1>
+</div>
+{% if todos %}
+{% for todo in todos %}
+    <div class="d-flex container task-container p-2 mb-4" >
+      <div class="p-2 w-100">
+        <h3 class="m-4 text-success link-primary " > Name : <a href="{% url 'task' todo.id %}">{{todo.name}}</a></h3>
+        <p class="m-4 text-dark ms-5"><i class="bi bi-clock-fill"></i> Created At : {{todo.createdAt}}</p>
+        <p class="m-4 text-danger ms-5"><i class="bi bi-dash-circle"></i> Completed ? : {{todo.isCompleted}}</p>
+      </div>
+      <div class="p-2 flex-shrink-1">
+        <a  class="btn btn-success text-light" href="{% url 'createItem' todo.id %}"><i class="bi bi-plus-circle-fill fs-2"></i></a>
+      </div>
+      <div class="p-2 flex-shrink-1">
+        <a  class="btn btn-primary text-light" href="{% url 'update' todo.id %}"><i class="bi bi-pencil-square fs-2"></i></a>
+      </div>
+      <div class="p-2 flex-shrink-1">
+        <a class="btn btn-danger text-light" href="{% url 'delete' todo.id %}"><i class="bi bi-trash3 fs-2"></i></a>
+      </div>
+     </div>
+  </div>
+  {% endfor%}
+  {% else %}
+    <h1 class="text-bg-info fs-2 p-3 container text-center rounded-2 text-light"><i class="bi bi-info-circle"></i> No todos added yet</h1>
+  {% endif %}  
+{% endblock content %}
+
